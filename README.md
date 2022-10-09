@@ -80,6 +80,10 @@ nx g @nrwl/angular:component MyComponent --project=portal-mylib
 
 Once the component has been added, ensure to add it to the `declaration` and `export` sections of your library module as well as to the `index` or `public-api` file to ensure your component is accessible when referenced by other applications or libraries.
 
+## **Setup Pre-commit validation**
+
+While working alone or in a team, it is good practice to setup pre-commit validation of the code and commit message. This ensure that your project has constant buildable codebase and consistant commit. The [CGit Hooks](https://github.com/NineteenSevenFour/template-portal-app/blob/main/GITHOOK.md) guide will help you to set that up.
+
 ## **Setup CI / CD**
 
 Different team uses different process adapted for their needs, but typically, you will have some sort of `SDLC` that include `Brnaching` and `Pull request`. Following this workflow, you will most likely use also `Continuous integration` and in case you don´t, then you should !
