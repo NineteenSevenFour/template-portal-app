@@ -35,7 +35,7 @@ npm install @nrwl/angular@13 -D
 Once the angular plugin is installed, we can generate the host application for our portal.
 
 ```bash
-nx g @nrwl/angular:host host --style=scss --prefix=portal-host --strict --dynamic --backendProject=http://localhost:9999/api --port 8100
+nx g @nrwl/angular:host host --prefix=portal-host --dynamic --backendProject=http://localhost:9999/api --style=scss --strict
 ```
 
 > INFO: `--dynamic` allows for runtime micro-frontend rather than static.
@@ -47,7 +47,7 @@ nx g @nrwl/angular:host host --style=scss --prefix=portal-host --strict --dynami
 Alternatively, we can generate a workspace for a remote application instead of a Host. You can even have both Host and Remote within the same workspace.
 
 ```bash
-nx g @nrwl/angular:host host --style=scss --prefix=portal-host --strict --dynamic --backendProject=http://localhost:9999/api --port 8100
+nx g @nrwl/angular:remote remote --host=host --port 8101 --prefix=portal-remote --backendProject=http://localhost:9999/api --strict --style=scss
 ```
 
 > TIP: run `nx g rm Myapp` to remove the application or library.
