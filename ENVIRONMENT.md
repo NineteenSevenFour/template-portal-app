@@ -19,7 +19,7 @@ Run `nvm install <node_version>` to install node.js verison then `nvm use <node_
 Some packeages are required to build the application skeleton. First runs `npm list -g --depth=0` to list the globally installed packages, then runs the following commands (adapt based on what you already have or need to update)
 
 ```bash
-npm install 'g nx@13 @nrwl/cli@13 @nrwl/workspace@13 create-nx-workspace@13 @ngrx/schematics@13 @angular/cli@13 @nrwl/schematics rimraf
+npm install -g nx@13 @nrwl/cli@13 @nrwl/workspace@13 create-nx-workspace@13 @ngrx/schematics@13 @angular/cli@13 @nrwl/schematics rimraf
 ```
 
 > Note that we are using version `13` on the whole toolcahin to match angular version.
